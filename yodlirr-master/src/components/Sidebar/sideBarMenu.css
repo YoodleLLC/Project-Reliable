@@ -1,0 +1,61 @@
+.sideBarMenuContainer {
+    position: fixed;
+    height: 100%;
+}
+
+.userMenu {
+    width: 100%;
+    text-align: center;
+    margin-right: 0px;
+    margin-left: 0px;    
+    margin-top: 0px;
+}
+
+nav.sidebar :global(.navbar-brand) :global(.glyphicon) {
+    margin-right: 0px;
+}
+
+
+/*Remove rounded coners*/
+nav.sidebar.:global(navbar) {
+    border-radius: 0px;
+}
+
+nav.sidebar {
+    -webkit-transition: margin 200ms ease-out;
+    -moz-transition: margin 200ms ease-out;
+    -o-transition: margin 200ms ease-out;
+    transition: margin 200ms ease-out;
+}
+
+/* .....NavBar: Icon only with coloring/layout.....*/
+
+/*small/medium side display*/
+@media ( min-width : 768px) {
+
+
+    /*Center Brand*/
+    nav.sidebar.:global(navbar).sidebar>.container :global(.navbar-brand), :global(.navbar)>:global(.container-fluid) :global(.navbar-brand)
+        {
+        margin-left: 0px;
+    }
+    /*Center Brand*/
+    nav.sidebar :global(.navbar-brand), nav.sidebar :global(.navbar-header) {
+        text-align: center;
+        width: 100%;
+        margin-left: 0px;
+    }
+}
+
+
+.slider {
+	overflow-y: hidden;
+	max-height: 100px; /* approximate max height */
+	transition-property: all;
+	transition-duration: .5s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+.slider.closed {
+	max-height: 0;
+}

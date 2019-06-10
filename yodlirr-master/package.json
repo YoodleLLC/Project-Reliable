@@ -1,0 +1,45 @@
+{
+  "name": "rfp_server",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-social": "^5.0.0",
+    "chart.js": "^1.1.1",
+    "classnames": "2.2.5",
+    "eslint": "^4.16.0",
+    "font-awesome": "^4.6.3",
+    "front-matter": "2.1.0",
+    "graphiql": "0.7.8",
+    "graphql": "0.7.0",
+    "isomorphic-style-loader": "1.0.0",
+    "jquery": "^3.1.1",
+    "normalize.css": "4.2.0",
+    "react": "^16.2.0",
+    "react-bootstrap": "^0.31.5",
+    "react-bootstrap-autosuggest": "^0.5.0",
+    "react-date-picker": "^6.5.2",
+    "react-dom": "^16.2.0",
+    "react-icons-kit": "^1.0.7",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "react-sidenav": "^2.1.2",
+    "recharts": "^1.0.0-beta.10",
+    "redux": "^3.7.2",
+    "validator": "^9.2.0",
+    "video-react": "^0.9.4"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --single-quote --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "precommit": "lint-staged",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
