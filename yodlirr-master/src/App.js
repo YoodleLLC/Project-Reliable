@@ -30,15 +30,18 @@ componentWillMount(){
   }
 
   isInSession=()=>{
-    postData(sData.URL.users.authenticate, {})
-    .then((resp) => {
-      if (resp.status === 200 & resp.statusText === "OK") {
-        this.setState({
-          isAuth: true
-        })
-      }     
+    this.setState({
+      isAuth: true
     })
-    .catch(err => alert(err))
+    // postData(sData.URL.users.authenticate, {})
+    // .then((resp) => {
+    //   if (resp.status === 200 & resp.statusText === "OK") {
+    //     this.setState({
+    //       isAuth: true
+    //     })
+    //   }     
+    // })
+    // .catch(err => alert(err))
   }
  
 
@@ -64,8 +67,8 @@ componentWillMount(){
           <Header />
           <div>
             <EvaluatorDashBoard/>
-            {/* <Sidebar/> */}
-            {/* <SideBarMenu /> */}
+            {/* <Sidebar/>  */}
+            <SideBarMenu /> 
           </div>
         </div>)
       }else if(false){
